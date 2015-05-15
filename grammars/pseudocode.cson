@@ -1,0 +1,21 @@
+'scopeName': 'source.pseudocode'
+'name': 'Pseudocode'
+'fileTypes': ['pseudo']
+'patterns': [
+  {
+    'match': '(END)?FOR'
+    'name': 'keyword.control'
+  },
+  {
+      'match': '(END)?IF|THEN|ELSE'
+      'name': 'keyword.control'
+  },
+  {
+      'match': '(END)?FUNCTION'
+      'name': 'entity.name.function'
+  },
+  {
+      'match': 'RETURN'
+      'name': 'keyword.control'
+  }
+]

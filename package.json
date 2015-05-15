@@ -1,0 +1,9 @@
+{
+  "name": "language-pseudocode",
+  "version": "0.0.1",
+  "description": "Syntax highlighting for pseudocode",
+  "engines": {
+    "atom": "*",
+    "node": "*"
+  }
+}
