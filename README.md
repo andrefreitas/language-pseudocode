@@ -18,7 +18,7 @@ write pseudocode? Well, this Atom package is a syntax highlighter for a pseudoco
 Here you can see some examples. The language is still not complete but can be enough just to write
 simple algorithms.
 
-### 1. For loop
+### 1. For
     FOR each component in commit
         component.revisions_twr += twr
 
@@ -31,10 +31,49 @@ simple algorithms.
         ENDIF
     ENDFOR
 
-### 2. Function
+### 2. While
+    counter = 0
+    WHILE counter < 10
+      counter += 1
+      print(counter)
+    ENDWHILE
+
+
+### 3. Function
     FUNCTION twr(ti)
         RETURN 1 / (1 + e ^ ( -12 * ti + 12) )
     ENDFUNCTION
+
+### 4. Class
+    CLASS person
+      name
+      email
+
+      FUNCTION person(name, email)
+        this.name = name
+        this.email = email
+      ENDFUNCTION
+
+    ENDCLASS
+
+### 5. Optional typing
+    CLASS person
+      string name
+      int age
+      float weight
+
+      FUNCTION person(string name, int age, float weight)
+        this.name = name
+        this.age = age
+        this.weight = weight
+      ENDFUNCTION
+
+    ENDCLASS
+
+### 6. Structures
+    list numbers = [1,2,3]
+    set lights = {"green", "red", "yellow"}
+    map person = {name: "Carlos", age: 12}
 
 ## Contributing
 I would love to have contributors to improve this language. Just send me an email hello@andrefreitas.pt

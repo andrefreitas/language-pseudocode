@@ -7,15 +7,35 @@
     'name': 'keyword.control'
   },
   {
-      'match': '(END)?IF|THEN|ELSE'
-      'name': 'keyword.control'
+    'match': '(END)?WHILE'
+    'name': 'keyword.control'
   },
   {
-      'match': '(END)?FUNCTION'
-      'name': 'entity.name.function'
+    'match': '(END)?IF|THEN|ELSE'
+    'name': 'keyword.control'
   },
   {
-      'match': 'RETURN'
-      'name': 'keyword.control'
-  }
+    'match': '(END)?FUNCTION'
+    'name': 'entity.name.function'
+  },
+  {
+    'match': 'RETURN'
+    'name': 'keyword.control'
+  },
+  {
+    'match': '(END)?CLASS'
+    'name': 'entity.name.type'
+  },
+  {
+    'match': 'this'
+    'name': 'support.variable'
+  },
+  {
+    'match': 'print'
+    'name': 'support.function'
+  },
+  {
+    'match': 'string|int|float|map|list|set'
+    'name': 'storage.type'
+   }
 ]
