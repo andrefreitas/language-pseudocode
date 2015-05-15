@@ -2,10 +2,10 @@
 Have you ever tried to explain an algorithm on a presentation or document and felt the lack of having a standard to
 write pseudocode? Well, this Atom package is a syntax highlighter for a pseudocode language.
 
-*Is still in development and open for new contributors.*
+*It is still in development and open for new contributors.*
 
 ## Install
-- Install the [Atom editor](https://atom.io/)
+- Install [Atom editor](https://atom.io/)
 - cd ~/.atom/packages
 - git clone https://github.com/andrefreitas/language-pseudocode
 
@@ -15,7 +15,7 @@ write pseudocode? Well, this Atom package is a syntax highlighter for a pseudoco
 - Learn the language by the examples here
 
 ## Language examples
-Here you can see some examples and as you can see, the language is still not complete but can be enough just to write
+Here you can see some examples. The language is still not complete but can be enough just to write
 simple algorithms.
 
 ### 1. For loop
@@ -44,7 +44,7 @@ I would love to have contributors to improve this language. Just send me an emai
 
 ## Roadmap and ideas
 - Write a grammar
-- Support for classes, prints, optional typing,
+- Support for classes, prints and optional typing
 - Define a standard library for io, network, etc
 - Build a parser to analyze time complexity
 - Publish on Atom (when language will be more complete)
