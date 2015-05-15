@@ -4,6 +4,8 @@ write pseudocode? Well, this Atom package is a syntax highlighter for a pseudoco
 
 *It is still in development and open for new contributors.*
 
+![Screen](imgs/print.png)
+
 ## Install
 - Install [Atom editor](https://atom.io/)
 - cd ~/.atom/packages
