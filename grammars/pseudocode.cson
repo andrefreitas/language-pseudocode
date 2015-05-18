@@ -27,6 +27,11 @@
     'name': 'entity.name.type'
   },
   {
+      'match': 'EXTENDS|ABSTRACT'
+      'name': 'entity.name.tag'
+  },
+
+  {
     'match': 'this'
     'name': 'support.variable'
   },
