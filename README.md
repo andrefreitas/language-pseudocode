@@ -58,7 +58,47 @@ simple algorithms.
 
     ENDCLASS
 
-### 5. Optional typing
+### 5. Abstract Classes
+    ABSTRACT CLASS Data
+      URL
+
+      FUNCTION load(filter, callback)
+        loadStored(filter, callback)
+        sync(filter, callback)
+      ENDFUNCTION
+
+      FUNCTION loadStored(filter, callback)
+            entities = query(filter)
+            callback(entities)
+      ENDFUNCTION
+
+      FUNCTION sync(filter, callback)
+        entities = request(filter, callback)
+        store(entities)
+        callback(entities)
+      ENDFUNCTION
+
+      FUNCTION ABSTRACT query(filter) // Local database query
+      FUNCTION ABSTRACT store(entities) // Saves entities on local database
+      FUNCTION ABSTRACT request(filter, callback) // API async JSON request
+
+    ENDCLASS
+
+    CLASS IterationsData EXTENDS DataInterface
+      FUNCTION query(filter)
+        (...)
+      ENDFUNCTION
+
+      FUNCTION store(entities)
+        (...)
+      ENDFUNCTION
+
+      FUNCTION request(filter)
+        (...)
+      ENDFUNCTION
+    ENDCLASS
+
+### 6. Optional typing
     CLASS person
       string name
       int age
@@ -72,7 +112,7 @@ simple algorithms.
 
     ENDCLASS
 
-### 6. Structures
+### 7. Structures
     list numbers = [1,2,3]
     set lights = {"green", "red", "yellow"}
     map person = {name: "Carlos", age: 12}
