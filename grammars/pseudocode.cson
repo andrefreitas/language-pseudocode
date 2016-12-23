@@ -40,7 +40,7 @@
     'name': 'support.function'
   },
   {
-    'match': 'string|int|float|map|list|set'
+    'match': 'string|int|float|map|list|set|stack|queue'
     'name': 'storage.type'
    }
 ]
